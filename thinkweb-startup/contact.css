@@ -1,0 +1,79 @@
+
+.contact-us , .btn{
+    background: url(images/contact.jpg),rgb(0, 0, 0,0.5);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+  .contact-items{
+    padding-top: 15px;
+   padding-bottom: 15px;
+  }
+  
+input,textarea{
+    border:1px solid white;
+    margin: 4px;
+    background: transparent;
+    padding: 12px;
+    width:550px;
+    color:white;
+  }
+  input:focus::placeholder,textarea:focus::placeholder{
+    color: transparent;
+  }
+  input::placeholder,textarea::placeholder{
+    color:white;
+    transition: color 0.5s ease;
+  }
+  .button{
+      padding-left: 200px;
+  }
+  .btn{
+   
+    background: rgb(0, 0, 0,0.5);
+    border: 2px solid white;
+    color: white;
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 40px;
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .btn:hover{
+    background-color: transparent;
+    border: 3px solid rgb(109, 109, 109);
+    color: rgb(109, 109, 109);
+  }
+  .social{
+    float:right;
+ }
+ .social li{
+    color: black;
+    list-style: none;
+     margin: 10px 10px;
+    display: inline-block;
+    font-size: 25px;
+    padding: 5px 10px ;
+    /* background-color: rgb(192, 192, 238); */
+    transition: 0.5s ease-out;
+}  
+/* .social li:hover {
+    transform: scale(1.2);
+}  */
+ .fa-facebook {
+  color: black;
+}
+.fa-linkedin{
+  color: black;
+}
+.fa-instagram{
+  color: #000;
+}
+.fa-youtube{
+  color: #000;
+} 
