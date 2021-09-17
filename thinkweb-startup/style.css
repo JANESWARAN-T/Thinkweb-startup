@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    
   }
   .background{
       background-image:url(images/cover.webp) ;
@@ -10,17 +11,18 @@ html{
       background-size: 100% 100%;
       text-align: left;
   }
-  .header-text{
+.header-text{ 
     text-align:left;
-    padding-top: 40vh;
+    padding-top: 10vh;
     color: aliceblue;
-    padding-left: 20vh;
+    padding-left: 10vh;
     font-family: "Lucida Console", "Courier New", monospace;
     text-transform: uppercase;
     font-size: 28px;
     line-height: 35px;
     word-spacing: 4px;
 }
+
 .whatido{
     display: flex;
     height: 80vh;
@@ -53,9 +55,9 @@ html{
     font-size: 16px;
 }
 .background-proj{
-    background-color: bisque;
-    height: 90vh;
-
+    background-color: #000;
+    height: 60vh;
+    color: rgb(141, 18, 18);
 }
 /* .whatido{
     font-size:10px;
@@ -76,10 +78,11 @@ html{
     justify-content: space-around;
     align-items: stretch;
     align-items: center;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
 
 }
 .text{
@@ -92,12 +95,13 @@ html{
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background-color: black;
+    background-color: #24262b;
 }
 .projbox{
     
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    size: 100vh; 
     /* color: white; */
  
 }
@@ -108,7 +112,7 @@ html{
     position: fixed;
     width: 50px;
     height: 50px;
-    background: #27ae60;
+    background: crimson;
     bottom: 40px;
     right: 50px;
   
@@ -167,3 +171,92 @@ html{
      height: 230vh;
     }
  }
+
+
+
+ 
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.918);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: crimson;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
